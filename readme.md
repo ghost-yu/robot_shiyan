@@ -33,7 +33,7 @@ python vae.py
 
 - 论文：`docs/act_paper.pdf`
 - 官方代码说明：`docs/act_official_readme.md`
-- 官方参考代码：`references/act_official/`
+- 官方参考代码：`references/act_official_source/`
 
 官方工程包含仿真数据采集、训练和评估入口。核心训练命令示例：
 
@@ -44,4 +44,5 @@ python imitate_episodes.py --task_name sim_transfer_cube_scripted \\
   --dim_feedforward 3200 --num_epochs 2000 --lr 1e-5 --seed 0
 ```
 
-完整依赖、仿真数据生成和评估步骤见 `references/act_official/README.md`。
+完整依赖、仿真数据生成和评估步骤见 `references/act_official_source/README.md`。
+面向 Python 初学者的详细中文讲解见 `docs/ACT新手逐行详解.md`。
