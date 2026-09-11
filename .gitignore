@@ -2,3 +2,4 @@
 __pycache__/
 *.pyc
 vae_checkpoints/*.pth
+act_simple/*.pt

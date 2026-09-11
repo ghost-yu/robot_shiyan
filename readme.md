@@ -28,3 +28,20 @@ python vae.py
 - `vae_epochN.pth`：模型检查点（本地生成，未提交到仓库）
 
 `epoch0` 图片表示模型随机初始化、尚未进行反向传播时的效果。
+
+## ACT 论文与参考代码
+
+- 论文：`docs/act_paper.pdf`
+- 官方代码说明：`docs/act_official_readme.md`
+- 官方参考代码：`references/act_official/`
+
+官方工程包含仿真数据采集、训练和评估入口。核心训练命令示例：
+
+```bash
+python imitate_episodes.py --task_name sim_transfer_cube_scripted \\
+  --ckpt_dir <ckpt_dir> --policy_class ACT --kl_weight 10 \\
+  --chunk_size 100 --hidden_dim 512 --batch_size 8 \\
+  --dim_feedforward 3200 --num_epochs 2000 --lr 1e-5 --seed 0
+```
+
+完整依赖、仿真数据生成和评估步骤见 `references/act_official/README.md`。
